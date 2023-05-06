@@ -8,7 +8,7 @@ body{
     margin: 0 auto;
 }
 
-/* ESTILOS HEADER */
+/* ESTILOS DEL HEADER */
 header{
     background-color: #2e64a1;
     padding: 1em 0;
@@ -22,7 +22,7 @@ header h1{
     position: relative;
     bottom: 30px;
 }
-/* ESTILOS NAVBAR */
+/* ESTILOS DEL NAVBAR */
 nav{
     background-color: #6da9ed;
     margin-bottom: 2em;
@@ -51,7 +51,7 @@ nav ul li a:hover{
 nav ul li a.activo{
     background-color: #4c76a5;
 }
-/* ESTILOS MAIN */
+/* ESTILOS DEL MAIN */
 h2{
     color: #2e64a1;
     font-weight: 400;
@@ -105,6 +105,7 @@ footer{
     margin-top: 2em;
     text-align: center;
 }
+/* ESTILOS DE LA SECCIÓN NOSOTROS */
 .historia p{
     font-size: 0.8em;
 }
@@ -149,4 +150,47 @@ footer{
 }
 .persona:first-child{
     margin-left: 0;
+}
+/* ESTILOS DE LA SECCIÓN SERVICIOS */
+.servicio{
+    border: 1px solid gray;
+    border-radius: 0.7em;
+    margin: 1em 0;
+    padding: 1em;
+    overflow: hidden;
+}
+.servicio .info{
+    width: 75%;
+}
+.servicio .info h4{
+    color: #2e64a1;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0 0 1em;
+    border-bottom: 1px solid #2e64a1;
+    padding-bottom: 0.5em;
+}
+.servicio .info p{
+    font-size: 0.8em;
+    line-height: 1.2em;
+}
+.servicio img {
+    border-radius: 0.8em;
+    width: 200px;
+    height: 150px;
+}
+.servicio:nth-child(even) img{/*par*/
+    float: right;
+    margin: 0 0 0 1em;
+}
+.servicio:nth-child(even) .info{
+    float: left;
+}
+.servicio:nth-child(odd) img{/*impar*/
+    float: left;
+    margin: 0 1em 0 0;
+}
+.servicio:nth-child(odd) .info{
+    float: right;
 }
